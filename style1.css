@@ -87,14 +87,12 @@ span {
 }
 
 .layar-penuh .container .row .column {
-  /* background-color: #ffc100; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 45rem;
   max-width: 90%;
-  /* margin: 20px 20px; */
   margin: 3vw 3vw;
   padding: 8vw 0;
   background: var(--second-bg-color);
@@ -102,7 +100,6 @@ span {
   font-weight: 600;
   color: var(--main-color);
   border-radius: 50px;
-  /* box-shadow: 0 0 30px rgb(22, 22, 22); */
   box-shadow: 5px 5px 10px var(--main-color);
 }
 
@@ -143,9 +140,6 @@ span {
 } */
 
 @media (max-width: 950px) {
-  .layar-penuh .container .row .column {
-  }
-
   .container h1 {
     font-size: 1em;
     margin: 20px 8vw 35px;
@@ -184,6 +178,20 @@ span {
 }
 @media (max-width: 470px) {
   h1 {
+    font-size: 0.8em;
+  }
+
+  .layar-penuh .container .row .column {
+    /* background-color: #ffc100; */
+    margin: 5vw 3vw;
+    font-size: 0.8em;
+  }
+
+  .layar-penuh .container .row {
+    margin: 0 5vw;
+  }
+
+  .layar-penuh a {
     font-size: 0.8em;
   }
 }

@@ -119,7 +119,7 @@ nav ul li a:hover {
 }
 
 .layar-penuh .container h1 {
-  font-size: 35px;
+  font-size: 2em;
   font-weight: bolder;
 }
 
@@ -152,7 +152,7 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgb(71, 49, 6);
   border: none;
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 1.2em;
   line-height: 1.273em;
   font-weight: bold;
   padding: 15px 40px;
@@ -237,7 +237,7 @@ footer .layar {
 
 .alamat {
   /* line-height: 50px; */
-  margin: 0 2w;
+  /* margin: 0 2w; */
 }
 
 .alamat .icon {
@@ -393,6 +393,11 @@ footer .layar-dalam .copyright {
 
   .alamat {
     /* line-height: 50px; */
-    margin: auto;
+    margin-left: 6vw;
+  }
+
+  .layar-penuh .container .row .column h1:first-child {
+    /* font-size: 1.8em; */
+    line-height: 30px;
   }
 }
