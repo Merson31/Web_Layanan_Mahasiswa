@@ -100,7 +100,8 @@ span {
   font-weight: 600;
   color: var(--main-color);
   border-radius: 50px;
-  box-shadow: 5px 5px 10px var(--main-color);
+  /* box-shadow: 5px 5px 10px var(--main-color); */
+  box-shadow: 0 0 30px rgb(22, 22, 22);
 }
 
 .layar-penuh a {
@@ -193,5 +194,9 @@ span {
 
   .layar-penuh a {
     font-size: 0.8em;
+  }
+
+  .layar-penuh .container .row .column {
+    border-radius: 25px;
   }
 }

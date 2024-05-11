@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar start -->
@@ -41,12 +42,12 @@
       <!-- Header start -->
       <div class="container" id="home">
         <div class="row">
-          <div class="column">
+          <div class="column" data-aos="fade-right">
             <img src="img/logo_bem.png" alt="" />
             <h1>BEM</h1>
             <h2>Universitas Kristen Indonesia Toraja</h2>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-left">
             <h1>LAYANAN PENGADUAN MAHASISWA</h1>
             <a href="kategori.html"
               >AJUKAN <span><i data-feather="chevron-right"></i></span
@@ -60,9 +61,9 @@
       <main>
         <section id="about">
           <div class="layar-dalam">
-            <h3>Tentang Kami</h3>
+            <h3 data-aos="fade-up">Tentang Kami</h3>
             <div class="konten-isi">
-              <p>
+              <p data-aos="zoom-in">
                 Layanan Pengaduan Mahasiswa adalah website untuk menampung saran
                 dan aspirasi dari mahasiswa. Selain itu mahasiswa juga dapat
                 mengajukan laporan jika ada kendala atau permasalahan yang
@@ -74,7 +75,7 @@
       </main>
 
       <footer id="contact">
-        <h3>Kontak</h3>
+        <h3 data-aos="fade-up">Kontak</h3>
         <div class="layar">
           <div class="alamat">
             <div class="alamat1">
@@ -120,7 +121,7 @@
             </div>
           </div>
 
-          <div class="peta">
+          <div class="peta" data-aos="flip-left">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.518136864596!2d119.91898037405832!3d-2.9536199397197866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d93c26476b42a2d%3A0x2b33b1bccb1a7e8a!2sKampus%202%20UKI%20Toraja!5e0!3m2!1sid!2sid!4v1714718114603!5m2!1sid!2sid"
               width="600"
@@ -140,6 +141,11 @@
 
     <script>
       feather.replace();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <script
