@@ -242,6 +242,7 @@ footer .alamat1 {
 /* .alamat {} */
 .alamat .icon {
   vertical-align: middle;
+  margin-right: 0.5vw;
 }
 
 .alamat h5 {
