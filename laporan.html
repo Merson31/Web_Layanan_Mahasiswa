@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Laporan</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Form <span>Laporan</span></h1>
+      <div class="report-form">
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyQPD0LugiTUhDZd33D8EupuGkufDtZB-R8k30Tqa28y3ghB-lUbZbJPZUSL8x2OgEAeQ/exec"
+          id="form-laporan"
+        >
+          <div class="contact">
+            <label for="">Informasi Mahasiswa:</label>
+            <input
+              type="text"
+              id="name"
+              name="Nama"
+              placeholder="Nama"
+              required
+            />
+            <input
+              type="number"
+              id="name"
+              name="NIM"
+              placeholder="NIM"
+              required
+            />
+            <input
+              type="text"
+              id="name"
+              name="Prodi"
+              placeholder="Program Studi"
+              required
+            />
+            <input
+              type="number"
+              id="name"
+              name="Angkatan"
+              placeholder="Angkatan"
+              required
+            />
+
+            <label for="">Informasi Kontak:</label>
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="No_WA"
+              placeholder="Nomor Whatsapp"
+              required
+            />
+          </div>
+
+          <div class="additional">
+            <label for="">Laporan:</label>
+            <textarea
+              name="Laporan"
+              id="report"
+              cols="30"
+              rows="10"
+              placeholder="Isikan Laporan Anda"
+              required
+            ></textarea>
+          </div>
+          <div class="btn-2">
+            <!-- <div class="kembali">
+              <a href="kategori.html">Kembali</a>
+            </div> -->
+            <div class="kirim">
+              <input type="submit" value="Kirim" class="send-btn1" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("form-laporan");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Laporan Anda berhasil terkirim!");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
