@@ -166,19 +166,15 @@ nav ul li a:hover {
 .layar-penuh .container .row .column:last-child {
   background-color: #ffc100;
   border-radius: 25px;
-  /* padding-top: 158px;
-  padding-bottom: 158px; */
   padding: 10vw 0;
-  box-shadow: 5px 5px 10px rgb(49, 48, 48);
+  box-shadow: 0 5px 10px rgb(49, 48, 48);
 }
 
 .layar-penuh .container .row .column:first-child {
   background-color: #ffc100;
   border-radius: 25px;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding: 6.7vw 0;
-  box-shadow: 5px 5px 10px rgb(49, 48, 48);
+  box-shadow: 0 5px 10px rgb(49, 48, 48);
 }
 
 .layar-penuh .container .row .column h1:first-child {
